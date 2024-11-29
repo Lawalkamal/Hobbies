@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "rubik", sans-serif;
+  background: white;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.5s;
+}
+
+a:hover {
+  color: #3d72fc;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  height: 50px;
+  padding: 0 70px;
+  background-color: white;
+  z-index: 1;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin-right: 40px;
+}
+
+.login-btn {
+  margin-right: 10px;
+  background: none;
+  color: #3d72fc;
+  border: solid 1px;
+  padding: 8px 15px;
+  border-radius: 4px;
+}
+
+.signup-btn {
+  background-color: #3d72fc;
+  padding: 9px 15px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
+/* Sections*/
+.main-intro {
+  text-align: center;
+  background-color: white;
+  height: 100vh;
+  align-items: center;
+  padding: 0 35px;
+  color: #3d72fc;
+}
+
+.main-intro h1 {
+  font-size: 100px;
+  /* position: relative;
+  top: 250px; */
+  animation: slideFromRight 1.3s ease-in;
+  margin-top: 200px;
+}
+
+.main-intro p {
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 10px;
+  animation: slideFromRight 1.3s ease-in;
+}
+
+.about-btn {
+  /* position: absolute;
+  bottom: 230px; */
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3d72fc;
+  color: white;
+  display: inline-block;
+  margin-top: 25px;
+  animation: slideFromRight 1.3s ease-in;
+}
+
+.round{
+}
+section {
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.section-content {
+  position: absolute;
+  bottom: 150px;
+  left: 100px;
+}
+
+.section-content h1 {
+  font-size: 70px;
+  margin-bottom: 10px;
+  transition: color 1s;
+  animation: slideFromRight 0.7s ease-in;
+}
+
+.section-content h1:hover {
+  color: rgb(253, 124, 247);
+}
+
+.section-content p {
+  width: 700px;
+  font-size: large;
+  transition: color 1s;
+  animation: slideFromRight 1s ease-in;
+}
+
+.section-content p:hover {
+  color: rgb(253, 124, 247);
+}
+
+.section-content button {
+  margin-top: 20px;
+  border: solid 1px;
+  border-color: #3d72fc;
+  padding: 15px 50px;
+  border-radius: 10px;
+  background: none;
+  color: #3d72fc;
+  transition: background-color 1s, color 1s;
+  animation: slideFromRight 1.3s ease-in;
+}
+
+.section-content button:hover {
+  background-color: #3d72fc;
+  color: white;
+}
+
+/*Animation*/
+@keyframes slideFromRight {
+  from {
+    transform: translatey(200px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translatex(0);
+    opacity: 1;
+  }
+}
+
+/*background images*/
+
+.photography {
+  background-image: url(/images/camera-514992_1280.jpg);
+}
+
+.fishing {
+  background-image: url(images/fishing-boat-5541327_1280.jpg);
+}
+
+.td-drawing {
+  background-image: url(images/lifestyle-3107041_960_720.jpg);
+}
+
+.camping {
+  background-image: url(images/camping-6612823_1280.jpg);
+}
+.craft {
+  background-image: url(images/pottery-8026823_1280.webp);
+}
+.cycling {
+  background-image: url(images/sports-850323_1280.jpg);
+}
+.yoga {
+  background-image: url(images/yoga-4489430_1280.jpg);
+}
+.dancing {
+  background-image: url(images/people-2605906_1280.jpg);
+}
+.gaming {
+  background-image: url(images/fortnite-4129124_1280.jpg);
+}
+.coding {
+  background-image: url();
+}
+
+.coding {
+  background-image: url(images/code-1839406_1280.jpg);
+}
+
+.cooking {
+  background-image: url(images/spaghetti-6639970_1280.jpg);
+}
+
+.martial {
+  background-image: url(images/men-89800_1280.jpg);
+}
+
+.writing {
+  background-image: url(images/notebook-2178656_1280.jpg);
+}
+
+footer {
+  height: 200px;
+}
+
+@media screen and (max-width: 500px) {
+  .main-header {
+    height: 100px;
+    flex-direction: column;
+    font-size: 15px;
+  }
+
+  nav ul {
+    align-items: center;
+  }
+
+  .login-btn,
+  .signup-btn {
+    display: none;
+  }
+
+  .section-content {
+  }
+
+  .section-content h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .section-content p {
+    width: 23rem;
+    font-size: 16px;
+    text-align: center;
+    line-height: 22px;
+  }
+}
