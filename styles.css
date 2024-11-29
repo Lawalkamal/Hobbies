@@ -116,8 +116,6 @@ ul {
   animation: slideFromRight 1.3s ease-in;
 }
 
-.round{
-}
 section {
   height: 100vh;
   background-position: center center;
@@ -254,9 +252,6 @@ footer {
   .login-btn,
   .signup-btn {
     display: none;
-  }
-
-  .section-content {
   }
 
   .section-content h1 {
